@@ -22,6 +22,8 @@ int main(int argc, char *argv[])
 		return fd;
   } else {
 	  ioctl(fd, RDA_WIFI_POWER_OFF_IOCTL);
+	  ioctl(fd, RDA_WIFI_STA_MODE_IOCTL);
+	  ioctl(fd, RDA_WIFI_POWER_ON_IOCTL);
     close(fd); 
   }
   return 0;
