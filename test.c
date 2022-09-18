@@ -16,6 +16,7 @@
 
 int main(int argc, char *argv[])
 {
+  int fd = -1;
   fd = open(BT_CTRL, O_RDWR);
   if (fd < 0) {
 		return fd;
