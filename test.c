@@ -24,5 +24,5 @@ int main(int argc, char *argv[])
 	  ioctl(fd, RDA_WIFI_POWER_OFF_IOCTL);
     close(fd); 
   }
-  return;
+  return 0;
 }
